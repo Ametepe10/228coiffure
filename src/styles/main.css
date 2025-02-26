@@ -462,7 +462,7 @@ a {
 @media (max-width: 768px) {
     .reservation-content-description {
         grid-template-columns: repeat(2, 1fr);
-    }.hero
+    }
 }
 
 @media (max-width: 480px) {
@@ -662,7 +662,7 @@ html {
 }
 
 .header.scrolled .logo img {
-    height: 55px;
+    height: 75px;
 }
 
 /* Hero Section */
