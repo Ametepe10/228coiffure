@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - Boss Coiffure</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- Polices Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../assets/images/Logo Boss Coiffure re.png" alt="Logo Boss Coiffure"/>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">accueil</a></li>
+                    <li><a href="index.html#apropos" class="nav-link">a propos</a></li>
+                    <li><a href="index.html#reservation" class="nav-link">reservation</a></li>
+                    <li><a href="index.html#promotion" class="nav-link">promotion</a></li>
+                    <li><a href="index.html#ateliers" class="nav-link">ateliers de coiffure/salons de beauté</a></li>
+                    <li><a href="index.html#contact" class="nav-link">contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Paiement -->
+    <section class="paiement">
+        <div class="container">
+            <div class="section-title">
+                <h1>Paiement</h1>
+                <span>Finaliser votre réservation</span>
+            </div>
+            <div class="paiement-content">
+                <form class="paiement-form">
+                    <div class="form-group">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service choisi</label>
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="coiffure">Coiffure</option>
+                            <option value="manucure">Manucure</option>
+                            <option value="pedicure">Pédicure</option>
+                            <option value="makeup">Make-up</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date souhaitée</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="heure">Heure souhaitée</label>
+                        <input type="time" id="heure" name="heure" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Confirmer la réservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
